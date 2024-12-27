@@ -1,2 +1,0 @@
-# Qualimentor
-Página da mentoria
