@@ -1,132 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QualiMentor - Mentoria QA</title>
+    <title>QualiMentor - Mentoria</title>
     <style>
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
         }
-        header {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
             text-align: center;
-            padding: 1rem 0;
+            margin-bottom: 20px;
         }
-        header img {
-            max-width: 200px;
-            height: auto;
+        .logo img {
+            width: 200px;
         }
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        h1, h2, h3 {
-            color: #6A0DAD;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "• ";
-            color: #6A0DAD;
-        }
-        .cta {
+        h1, h2 {
+            color: #7F00FF; /* Roxo */
             text-align: center;
-            margin: 2rem 0;
         }
-        .cta a {
-            background-color: #6A0DAD;
-            color: #fff;
-            padding: 1rem 2rem;
-            text-decoration: none;
+        .content {
+            margin: 20px 0;
+        }
+        .form-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            color: #7F00FF;
+        }
+        .form-container input, 
+        .form-container select, 
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
             border-radius: 5px;
+            border: 1px solid #7F00FF;
+            background-color: #333;
+            color: white;
         }
-        .cta a:hover {
-            background-color: #8B00FF;
+        .form-container button {
+            background-color: #7F00FF;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #9A00FF;
+        }
+        .whatsapp-link {
+            color: #7F00FF;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+        }
+        .whatsapp-link:hover {
+            color: #9A00FF;
         }
     </style>
 </head>
 <body>
-    <main>
-        <section>
-            <h2>Seja um Profissional de QA e Alavanque sua Carreira!</h2>
-            <p>O papel de Quality Assurance (QA) é essencial para garantir a qualidade de softwares, fazendo a diferença no mercado de tecnologia. Como QA, você estará diretamente envolvido em testar e validar produtos, garantindo que atendam aos mais altos padrões de qualidade.</p>
-            <p>A área de QA oferece ótimas perspectivas de crescimento, com salários variando de R$ 2.500 a R$ 10.000, dependendo da experiência. Além disso, a possibilidade de trabalho remoto proporciona flexibilidade e uma melhor qualidade de vida.</p>
-        </section>
-
-        <section>
-            <h2>Detalhes do Curso</h2>
-            <ul>
-                <li><strong>Duração:</strong> 3 meses</li>
-                <li><strong>Formato:</strong> Aulas online com mentoria personalizada</li>
-                <li><strong>Investimento:</strong> R$ 3.000 à vista ou 12x de R$ 329</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Conteúdo Programático</h2>
-            <h3>Módulo 1: Fundamentos de QA (Semana 1-2)</h3>
-            <ul>
-                <li>Introdução à qualidade de software e ao papel do QA</li>
-                <li>Tipos de testes e suas aplicações (funcionais, não funcionais, de segurança)</li>
-                <li>Ferramentas básicas para o dia a dia de um QA</li>
-                <li>Como criar e documentar casos de teste</li>
-                <li>Testes manuais: práticas e boas técnicas de execução</li>
-            </ul>
-            <h3>Módulo 2: Testes Funcionais e Automação de Testes (Semana 3-4)</h3>
-            <ul>
-                <li>Estratégias de teste funcional e criação de cenários</li>
-                <li>Introdução ao Cypress para automação de testes</li>
-                <li>Como criar e rodar testes automatizados em aplicações web</li>
-                <li>Análise de relatórios e erros: identificando falhas nos testes</li>
-                <li>Como automatizar testes repetitivos e aumentar a produtividade</li>
-            </ul>
-            <h3>Módulo 3: Estratégias Avançadas de Teste (Semana 5-6)</h3>
-            <ul>
-                <li>Testes de API e validação de endpoints</li>
-                <li>Automação de testes complexos com Cypress</li>
-                <li>Testes de compatibilidade e validação em diferentes navegadores</li>
-                <li>Análise e interpretação de resultados de testes automatizados</li>
-            </ul>
-            <h3>Módulo 4: Boas Práticas em QA e Gestão de Testes (Semana 7-8)</h3>
-            <ul>
-                <li>Melhores práticas para garantir qualidade em todas as etapas do desenvolvimento</li>
-                <li>Como organizar e priorizar casos de teste</li>
-                <li>Gestão de testes com ferramentas como Jira</li>
-                <li>Feedback contínuo: como trabalhar com desenvolvedores para melhorias</li>
-                <li>Comunicação eficaz: relatando falhas e resultados de testes</li>
-            </ul>
-            <h3>Módulo 5: Preparação para o Mercado de Trabalho (Semana 9-12)</h3>
-            <ul>
-                <li>Como estruturar um portfólio de QA para se destacar no mercado</li>
-                <li>Dicas para entrevistas: como apresentar seus conhecimentos</li>
-                <li>Estratégias para network e como encontrar oportunidades de trabalho</li>
-                <li>Desenvolvendo soft skills: como trabalhar em equipe</li>
-                <li>Mentoria personalizada: orientação de carreira e planejamento</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Bônus</h2>
-            <ul>
-                <li>Certificado de conclusão</li>
-                <li>Suporte contínuo durante todo o curso</li>
-            </ul>
-        </section>
-
-        <div class="cta">
-            <p>Garanta sua vaga e comece sua transformação!</p>
-            <a href="https://wa.me/5511934974269" target="_blank">Entre em contato pelo WhatsApp</a>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="QualiMentor Logo">
         </div>
-    </main>
+        <h1>QualiMentor</h1>
+        <h2>Preparando você para o sucesso na área de QA</h2>
+        <div class="content">
+            <!-- Conteúdo do curso aqui -->
+        </div>
+        <div class="form-container">
+            <h2>Faça sua Matrícula</h2>
+            <form action="mailto:qualimentor.mentoria@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="payment">Meio de Pagamento</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Selecione</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Boleto Bancário">Boleto Bancário</option>
+                </select>
+
+                <button type="submit">Enviar Matrícula</button>
+            </form>
+        </div>
+        <a href="https://wa.me/seunumerowhatsapp" class="whatsapp-link" target="_blank">
+            Fale comigo no WhatsApp
+        </a>
+    </div>
 </body>
 </html>
