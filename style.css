@@ -54,3 +54,38 @@ header h1 {
     background-color: #8A2BE2;
     color: #fff;
 }
+
+/* Estilo para os botões */
+.btn {
+    display: inline-block;
+    background-color: #7c4dff; /* roxo */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #6a3bc3; /* roxo mais escuro */
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro-text, .qa-role {
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.more-info, .back-button {
+    text-align: center;
+    margin-top: 20px;
+}
