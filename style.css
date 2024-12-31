@@ -56,19 +56,28 @@ header h1 {
 }
 
 /* Estilo para os botões */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 5px;  /* Espaçamento entre os botões */
-    background-color: #6a1b9a;  /* Cor de fundo roxa */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;  /* Tamanho do texto menor */
-    text-align: center;
-    transition: background-color 0.3s;
+/* Certifique-se de adicionar este CSS no arquivo style.css */
+.buttons {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    justify-content: center; /* Alinha os botões ao centro */
+    margin-top: 20px; /* Espaço entre a seção de detalhes e os botões */
 }
 
+.btn {
+    background-color: #6200EE; /* Cor de fundo do botão */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #3700B3; /* Cor ao passar o mouse */
+}
 /* Efeito de hover para os botões */
 .btn:hover {
     background-color: #4a148c;  /* Cor de fundo ao passar o mouse */
