@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QualiMentor - Mentoria</title>
+    <title>QualiMentor - Página Inicial</title>
     <style>
         body {
             background-color: black;
@@ -11,140 +11,38 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #7F00FF;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            max-width: 200px;
-            height: auto;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #9A00FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #7F00FF;
             text-align: center;
         }
-        .form-container {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-        .form-container label {
-            display: block;
-            margin-top: 10px;
+        h1 {
             color: #7F00FF;
         }
-        .form-container input, 
-        .form-container select, 
-        .form-container button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #7F00FF;
-            background-color: #333;
+        a {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
             color: white;
-        }
-        .form-container button {
             background-color: #7F00FF;
-            border: none;
-            cursor: pointer;
-        }
-        .form-container button:hover {
-            background-color: #9A00FF;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        .whatsapp-link {
-            color: #7F00FF;
             text-decoration: none;
+            border-radius: 5px;
+            width: 200px;
             font-size: 18px;
-            text-align: center;
-            display: block;
-            margin-top: 20px;
         }
-        .whatsapp-link:hover {
-            color: #9A00FF;
+        a:hover {
+            background-color: #9A00FF;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="QualiMentor Logo">
-        <h1>QualiMentor</h1>
-    </header>
-
-    <nav>
-        <a href="#curso">Informações do Curso</a>
-        <a href="#inscricao">Faça sua Inscrição</a>
-    </nav>
-
     <div class="container">
-        <section id="curso">
-            <h2>Informações do Curso</h2>
-            <p>O papel de Quality Assurance (QA) é essencial para garantir a qualidade de softwares...</p>
-            <h3>Detalhes:</h3>
-            <ul>
-                <li><strong>Duração:</strong> 3 meses</li>
-                <li><strong>Formato:</strong> Aulas online com mentoria personalizada</li>
-                <li><strong>Investimento:</strong> R$ 3.000 à vista ou 12x de R$ 329</li>
-            </ul>
-            <h3>Conteúdo Programático:</h3>
-            <ul>
-                <li>Módulo 1: Fundamentos de QA</li>
-                <li>Módulo 2: Testes Funcionais e Automação</li>
-                <li>Módulo 3: Estratégias Avançadas de Teste</li>
-                <li>Módulo 4: Boas Práticas em QA e Gestão de Testes</li>
-                <li>Módulo 5: Preparação para o Mercado de Trabalho</li>
-            </ul>
-        </section>
-
-        <section id="inscricao" class="form-container">
-            <h2>Faça sua Matrícula</h2>
-            <form action="mailto:qualimentor.mentoria@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="payment">Meio de Pagamento</label>
-                <select id="payment" name="payment" required>
-                    <option value="">Selecione</option>
-                    <option value="Cartão de Crédito">Cartão de Crédito</option>
-                    <option value="Pix">Pix</option>
-                    <option value="Boleto Bancário">Boleto Bancário</option>
-                </select>
-
-                <button type="submit">Enviar Matrícula</button>
-            </form>
-        </section>
-
-        <a href="https://wa.me/seunumerowhatsapp" class="whatsapp-link" target="_blank">
-            Fale comigo no WhatsApp
-        </a>
+        <h1>Bem-vindo ao QualiMentor</h1>
+        <a href="informacoes.html">Informações do Curso</a>
+        <a href="matricula.html">Faça sua Matrícula</a>
     </div>
 </body>
 </html>
