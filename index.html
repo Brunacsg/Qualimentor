@@ -12,29 +12,43 @@
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #7F00FF;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #9A00FF;
+        }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .logo img {
-            width: 200px;
-        }
         h1, h2 {
-            color: #7F00FF; /* Roxo */
+            color: #7F00FF;
             text-align: center;
-        }
-        .content {
-            margin: 20px 0;
         }
         .form-container {
             background-color: #222;
             padding: 20px;
             border-radius: 10px;
+            margin-top: 40px;
         }
         .form-container label {
             display: block;
@@ -60,6 +74,9 @@
         .form-container button:hover {
             background-color: #9A00FF;
         }
+        section {
+            margin-bottom: 50px;
+        }
         .whatsapp-link {
             color: #7F00FF;
             text-decoration: none;
@@ -74,16 +91,37 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="logo.png" alt="QualiMentor Logo">
-        </div>
+    <header>
+        <img src="logo.png" alt="QualiMentor Logo">
         <h1>QualiMentor</h1>
-        <h2>Preparando você para o sucesso na área de QA</h2>
-        <div class="content">
-            <!-- Conteúdo do curso aqui -->
-        </div>
-        <div class="form-container">
+    </header>
+
+    <nav>
+        <a href="#curso">Informações do Curso</a>
+        <a href="#inscricao">Faça sua Inscrição</a>
+    </nav>
+
+    <div class="container">
+        <section id="curso">
+            <h2>Informações do Curso</h2>
+            <p>O papel de Quality Assurance (QA) é essencial para garantir a qualidade de softwares...</p>
+            <h3>Detalhes:</h3>
+            <ul>
+                <li><strong>Duração:</strong> 3 meses</li>
+                <li><strong>Formato:</strong> Aulas online com mentoria personalizada</li>
+                <li><strong>Investimento:</strong> R$ 3.000 à vista ou 12x de R$ 329</li>
+            </ul>
+            <h3>Conteúdo Programático:</h3>
+            <ul>
+                <li>Módulo 1: Fundamentos de QA</li>
+                <li>Módulo 2: Testes Funcionais e Automação</li>
+                <li>Módulo 3: Estratégias Avançadas de Teste</li>
+                <li>Módulo 4: Boas Práticas em QA e Gestão de Testes</li>
+                <li>Módulo 5: Preparação para o Mercado de Trabalho</li>
+            </ul>
+        </section>
+
+        <section id="inscricao" class="form-container">
             <h2>Faça sua Matrícula</h2>
             <form action="mailto:qualimentor.mentoria@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Nome Completo</label>
@@ -102,7 +140,8 @@
 
                 <button type="submit">Enviar Matrícula</button>
             </form>
-        </div>
+        </section>
+
         <a href="https://wa.me/seunumerowhatsapp" class="whatsapp-link" target="_blank">
             Fale comigo no WhatsApp
         </a>
