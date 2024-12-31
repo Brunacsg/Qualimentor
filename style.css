@@ -1,70 +1,56 @@
+/* Definindo o fundo preto e texto branco */
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+.container {
+    width: 100%;
+    margin: 0 auto;
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Estilizando o cabeçalho */
+header h1 {
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
     color: #fff;
-    border: none;
-    cursor: pointer;
+    font-size: 36px;
 }
 
-form button:hover {
-    background-color: #555;
+/* Estilizando a introdução */
+.intro h2 {
+    color: #8A2BE2; /* Cor roxa para título */
+    font-size: 28px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilizando as opções de links */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.options a {
+    color: #8A2BE2; /* Cor roxa para os links */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.options a:hover {
+    background-color: #8A2BE2;
+    color: #fff;
 }
